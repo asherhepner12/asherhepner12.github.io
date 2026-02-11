@@ -23,12 +23,14 @@ a:hover {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0;                      /* Removes default browser margin around body */
+  display: flex;                  /* Makes body a flex container */
+  flex-direction: column;         /* Stacks children vertically (top to bottom) */
+  place-items: center;            /* Shorthand for align-items AND justify-items center */
+  justify-content: center;        /* Centers children vertically in the container */
+  min-width: 320px;               /* Ensures body is at least 320px wide */
+  min-height: 100vh;              /* Makes body at least full viewport height (100% of screen) */
+  text-align: center;             /* Centers text inside elements */
 }
 
 h1 {
